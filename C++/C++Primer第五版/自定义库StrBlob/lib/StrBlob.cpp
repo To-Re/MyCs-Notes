@@ -1,4 +1,5 @@
 #include "StrBlob.h"
+#include "StrBlobPtr.h"
 
 StrBlob::StrBlob():data(make_shared<vector<string>>()) {}
 StrBlob::StrBlob(initializer_list<string> il):
@@ -22,4 +23,10 @@ string& StrBlob::back() {
 void StrBlob::pop_back() {
     check(0, "pop_back on empty StrBlob");
     data->pop_back();
+}
+
+StrBlobPtr StrBlob::begin() {return StrBlobPtr(*this);}
+StrBlobPtr StrBlob::end() {
+    auto ret = StrBlobPtr(*this, data->size());
+    return ret;
 }
