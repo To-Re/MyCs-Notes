@@ -1,7 +1,6 @@
 # Linux 学习笔记
 
-参照 [实验楼-Linux 基础入门](https://www.shiyanlou.com/courses/1) 学习大纲，对其他资源总结。
-
+参照 [实验楼-Linux 基础入门](https://www.shiyanlou.com/courses/1) 学习大纲，以及对其他资源总结。
 
 ## 目录
 
@@ -33,3 +32,4 @@
 
 + #### [13 进程相关](13进程相关.md)
 
++ #### [系统监测工具](/计算机网络/《Linux高性能服务器编程》/17系统监测工具.md)
